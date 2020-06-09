@@ -12,7 +12,7 @@ public class SeleniumClassTest {
 	@Test
 	public void SeleniumTestFunction() 
 	{
-		System.out.println("Andate a la xuxa");
+		System.out.println("Cargando Testing");
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Isco\\Desktop\\Esudios\\Quinto Semestre\\Tecnicas de Calidad\\Selenium\\chromedriver.exe" );
 		WebDriver driver = new ChromeDriver();
 		
