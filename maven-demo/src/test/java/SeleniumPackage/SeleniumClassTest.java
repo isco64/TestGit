@@ -23,7 +23,7 @@ public class SeleniumClassTest {
         driver.manage().window().maximize();
         
         // click en link
-        //driver.findElement(By.linkText("Carrito de Compras")).click();
+        ////driver.findElement(By.linkText("Carrito de Compras")).click();
 	}
 
 }
