@@ -1,5 +1,6 @@
 package SeleniumPackage;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -14,7 +15,14 @@ public class SeleniumClassTest {
 		System.out.println("Andate a la xuxa");
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Isco\\Desktop\\Esudios\\Quinto Semestre\\Tecnicas de Calidad\\Selenium\\chromedriver.exe" );
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://google.cl");
+		
+        String baseUrl = "http://localhost:8080/CarritoComprasWeb/";
+        
+        driver.get(baseUrl);
+        driver.manage().window().maximize();
+        
+        // click en link
+        driver.findElement(By.linkText("Carrito de Compras")).click();
 	}
 
 }
